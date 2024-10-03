@@ -2,7 +2,7 @@
 	$ch = curl_init();
 	$daq = array("file"=>'https://maps.googleapis.com/maps/api/staticmap?size=512x512&maptype=roadmap&markers=size:mid%7Ccolor:red%7C'.'Add Latitude Here'.','.'Add Latitude Here'.'&key='.'Google Map Generated API Key'.'&zoom=15',"image_name"=>'Name of the Image to be kept');
 	$image_upload_location = "Give path of upload file to the project image storage where this image will be stored. See example as below";
-	// $image_upload_location = "https://fsiverify.com/candidate-common/candidate-assets/images/detected-map-image-from-admin/upload.php";
+	// $image_upload_location = "https://your-website-name.com/images/detected-map-image-from-admin/upload.php";
 	$options = array(
 	    CURLOPT_URL => $image_upload_location,
 	    CURLOPT_CUSTOMREQUEST => "POST",
